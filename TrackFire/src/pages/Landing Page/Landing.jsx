@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
-import hero from "../../assets/image.png";
+import hero from "../../assets/hero.png";
+import hero1 from "../../assets/image.png";
 import logo1 from "../../assets/logo1.png";
 import logo2 from "../../assets/logo2.png";
 import logo3 from "../../assets/logo3.png";
@@ -157,7 +158,8 @@ const Landing = () => {
           </div>
         </div>
         <div className="w-[430px] ">
-          <img className="rounded-xl" src={hero} />
+          <img className="rounded-xl relative" src={hero} alt="Hero image"/>
+          <img className="absolute w-[300px] rounded-2xl top-[135px] right-[148px]" src={hero1}/>
         </div>
       </div>
       {/* Hero section ends here */}
