@@ -141,7 +141,7 @@ const Landing = () => {
           <div>SPLIT</div>
           <div>MONEY</div>
           <div>NOT,</div>
-          <div>FRIENDSHIPS,</div>
+          <div>FRIENDSHIPS</div>
           <div className="text-sm text-gray-500 font-light">
             Finvo streamlines bill splitting among friends, ensuring seamless
             transactions for everyone involved.
