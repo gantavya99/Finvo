@@ -42,12 +42,10 @@ const Landing = () => {
                           href="/"
                         >
                           <div className="mb-2 mt-4 text-lg font-medium">
-                            shadcn/ui
+                            Lorem Ipsum
                           </div>
                           <p className="text-sm leading-tight text-muted-foreground">
-                            Beautifully designed components that you can copy
-                            and paste into your apps. Accessible. Customizable.
-                            Open Source.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi at obcaecati beatae nobis distinctio labore?
                           </p>
                         </a>
                       </NavigationMenuLink>
@@ -57,22 +55,21 @@ const Landing = () => {
                       href="/docs"
                       title="Introduction"
                     >
-                      Re-usable components built using Radix UI and Tailwind
-                      CSS.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </a>
                     <a
                       className="hover:bg-gradient-to-b from-muted/50 to-muted rounded-md p-2"
                       href="/docs/installation"
                       title="Installation"
                     >
-                      How to install dependencies and structure your app.
+                      Lorem ipsum dolor sit amet consectetur.
                     </a>
                     <a
                       className="hover:bg-gradient-to-b from-muted/50 to-muted rounded-md p-2"
                       href=""
                       title="Typography"
                     >
-                      Styles for headings, paragraphs, lists...etc
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </a>
                   </ul>
                 </NavigationMenuContent>
@@ -88,12 +85,10 @@ const Landing = () => {
                           href="/"
                         >
                           <div className="mb-2 mt-4 text-lg font-medium">
-                            shadcn/ui
+                            Lorem
                           </div>
                           <p className="text-sm leading-tight text-muted-foreground">
-                            Beautifully designed components that you can copy
-                            and paste into your apps. Accessible. Customizable.
-                            Open Source.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam quisquam labore.
                           </p>
                         </a>
                       </NavigationMenuLink>
@@ -103,22 +98,21 @@ const Landing = () => {
                       href="/docs"
                       title="Introduction"
                     >
-                      Re-usable components built using Radix UI and Tailwind
-                      CSS.
+                      Lorem ipsum dolor sit amet consectetur.
                     </a>
                     <a
                       className="hover:bg-gradient-to-b from-muted/50 to-muted rounded-md p-2"
                       href="/docs/installation"
                       title="Installation"
                     >
-                      How to install dependencies and structure your app.
+                      Lorem ipsum dolor sit amet.
                     </a>
                     <a
                       className="hover:bg-gradient-to-b from-muted/50 to-muted rounded-md p-2"
                       href=""
                       title="Typography"
                     >
-                      Styles for headings, paragraphs, lists...etc
+                      Lorem ipsum dolor sit amet, consectetur adipisicing.
                     </a>
                   </ul>
                 </NavigationMenuContent>
