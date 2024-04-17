@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily:{
+        'League-Spartans':['League Spartan','sans-serif'],
+        'Inter':['Inter','sans-serif']
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
