@@ -33,7 +33,7 @@ const Landing = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Getting Started</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Features</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-6">
                     <li>
@@ -67,38 +67,10 @@ const Landing = () => {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Features</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid gap-3 p-6">
-                    <li>
-                      <a
-                        className="hover:bg-gray-100 rounded-md p-2 block"
-                        href="/features"
-                        title="Features"
-                      >
-                        Features
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="hover:bg-gray-100 rounded-md p-2 block"
-                        href="/pricing"
-                        title="Pricing"
-                      >
-                        Pricing
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="hover:bg-gray-100 rounded-md p-2 block"
-                        href="/faq"
-                        title="FAQ"
-                      >
-                        FAQ
-                      </a>
-                    </li>
-                  </ul>
-                </NavigationMenuContent>
+              <NavigationMenuLink className="hover:bg-gray-100 rounded-md p-2 pl-3 cursor-pointer text-sm">
+                  Getting Started
+                </NavigationMenuLink>
+                
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink className="hover:bg-gray-100 rounded-md p-2 pl-3 cursor-pointer text-sm">
