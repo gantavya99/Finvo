@@ -5,7 +5,6 @@ const Home = () => {
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  console.log(VITE_SPLITWISE_CONSUMER_KEY,VITE_SPLITWISE_CONSUMER_SECRET,VITE_SPLITWISE_REDIRECT_URI)
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const code = urlParams.get('code');
