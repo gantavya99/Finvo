@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import React from "react";
 import hero from "../../assets/hero.png";
-import hero1 from "../../assets/image.png";
+import hero1 from "../../assets/hero.png";
 import logo1 from "../../assets/logo1.png";
 import logo2 from "../../assets/logo2.png";
 import logo3 from "../../assets/logo3.png";
@@ -19,6 +20,7 @@ import {
 } from "@/components/ui/navigation-menu";
 const logoArray = [logo1, logo2, logo3, logo4, logo5];
 const Landing = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-slate-50">
      <div className="bg-white px-4 py-2 md:px-20">
@@ -81,10 +83,13 @@ const Landing = () => {
           </NavigationMenu>
         </div>
         <div>
+          <a href={`https://secure.splitwise.com/oauth/authorize?response_type=code&client_id=SNlyhuTSCKQ1gkYZnmn67jTAzx1JeOimNafpwU7a`} >
+           
           <Button className="bg-white text-black mx-2 hover:bg-gray-100">
             Login
           </Button>
-          <Button className="hover:text-black border border-primary">
+          </a>
+          <Button onClick={()=>navigate("/signin")} className="hover:text-black border border-primary">
             Register
           </Button>
         </div>
