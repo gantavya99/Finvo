@@ -83,7 +83,7 @@ const Landing = () => {
           </NavigationMenu>
         </div>
         <div>
-          <a href={`https://secure.splitwise.com/oauth/authorize?response_type=code&client_id=${import.meta.env.VITE_SPLITWISE_CONSUMER_KEY}`} >
+        <a href={`https://secure.splitwise.com/oauth/authorize?response_type=code&client_id=SNlyhuTSCKQ1gkYZnmn67jTAzx1JeOimNafpwU7a`} >
            
           <Button className="bg-white text-black mx-2 hover:bg-gray-100">
             Login
