@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import { VITE_SPLITWISE_CONSUMER_KEY,VITE_SPLITWISE_CONSUMER_SECRET,VITE_SPLITWISE_REDIRECT_URI } from '../../../api';
 const Home = () => {
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  console.log(VITE_SPLITWISE_CONSUMER_KEY,VITE_SPLITWISE_CONSUMER_SECRET,VITE_SPLITWISE_REDIRECT_URI)
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const code = urlParams.get('code');
@@ -58,9 +58,9 @@ const Home = () => {
           const tokenResponse = await axios.post(
             'https://secure.splitwise.com/oauth/token',
             {
-              client_id: import.meta.env.VITE_SPLITWISE_CONSUMER_KEY,
-              client_secret: import.meta.env.VITE_SPLITWISE_CONSUMER_SECRET,
-              redirect_uri: import.meta.env.VITE_SPLITWISE_REDIRECT_URI,
+              client_id: VITE_SPLITWISE_CONSUMER_KEY,
+              client_secret: VITE_SPLITWISE_CONSUMER_SECRET,
+              redirect_uri: VITE_SPLITWISE_REDIRECT_URI,
               grant_type: 'authorization_code',
               code: code,
             }
