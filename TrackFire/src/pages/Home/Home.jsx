@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const code = urlParams.get('code');
-
+    console.log(code);
     const fetchUserProfile = async (accessToken) => {
       try {
         const userResponse = await axios.get(
