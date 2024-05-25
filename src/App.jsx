@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button"; // Adjust this import based on your UI library setup
 import { Input } from "./components/ui/input"; // Adjust this import based on your UI library setup
+import { Toaster,toast } from "react-hot-toast";
 
 export default function App() {
   const [url, setUrl] = useState("");
@@ -25,8 +26,9 @@ export default function App() {
     if (text && start && end) {
       setCaptions([...captions, currentCaption]);
       setCurrentCaption({ text: "", start: "", end: "" });
+      toast.success("Caption added successfully!")
     } else {
-      alert("Please fill out all fields for the caption");
+      toast.error("Please enter all the fields!")
     }
   };
 
@@ -49,7 +51,7 @@ export default function App() {
 
   return (
     <div className="AppContainer max-w-7xl mx-auto p-4">
-      <div className="flex items-center justify-center flex-col mt-20">
+      <div className="flex items-center justify-center mt-8 flex-col">
         <div className="flex m-4">
           <Input
             className="min-w-96"
@@ -63,7 +65,7 @@ export default function App() {
         </div>
 
         {url && (
-          <>
+          <div className="flex flex-col">
             <div className="relative">
               <video ref={videoRef} controls className="h-72" src={url}></video>
               {displayedCaption && (
@@ -99,9 +101,11 @@ export default function App() {
                 Add Caption
               </Button>
             </div>
-          </>
+            
+          </div>
         )}
       </div>
+      <Toaster />
     </div>
   );
 }
