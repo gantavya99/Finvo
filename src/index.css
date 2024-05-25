@@ -78,3 +78,27 @@
     @apply bg-background text-foreground;
   }
 }
+.AppContainer {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.video-container {
+  position: relative;
+}
+
+.caption-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.form-container {
+  margin-top: 20px;
+}
